@@ -1,0 +1,12 @@
+/Users/Dimitrov/C#Projects/BankATM/BankATM/obj/Debug/netcoreapp3.1/BankATM.csprojAssemblyReference.cache
+/Users/Dimitrov/C#Projects/BankATM/BankATM/obj/Debug/netcoreapp3.1/BankATM.AssemblyInfoInputs.cache
+/Users/Dimitrov/C#Projects/BankATM/BankATM/obj/Debug/netcoreapp3.1/BankATM.AssemblyInfo.cs
+/Users/Dimitrov/C#Projects/BankATM/BankATM/obj/Debug/netcoreapp3.1/BankATM.csproj.CoreCompileInputs.cache
+/Users/Dimitrov/C#Projects/BankATM/BankATM/bin/Debug/netcoreapp3.1/BankATM.deps.json
+/Users/Dimitrov/C#Projects/BankATM/BankATM/bin/Debug/netcoreapp3.1/BankATM.runtimeconfig.json
+/Users/Dimitrov/C#Projects/BankATM/BankATM/bin/Debug/netcoreapp3.1/BankATM.runtimeconfig.dev.json
+/Users/Dimitrov/C#Projects/BankATM/BankATM/bin/Debug/netcoreapp3.1/BankATM.dll
+/Users/Dimitrov/C#Projects/BankATM/BankATM/bin/Debug/netcoreapp3.1/BankATM.pdb
+/Users/Dimitrov/C#Projects/BankATM/BankATM/obj/Debug/netcoreapp3.1/BankATM.dll
+/Users/Dimitrov/C#Projects/BankATM/BankATM/obj/Debug/netcoreapp3.1/BankATM.pdb
+/Users/Dimitrov/C#Projects/BankATM/BankATM/obj/Debug/netcoreapp3.1/BankATM.genruntimeconfig.cache
