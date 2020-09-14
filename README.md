@@ -1,2 +1,2 @@
-# C--ATM
+# C# - ATM
 C# program simulating bank ATM
