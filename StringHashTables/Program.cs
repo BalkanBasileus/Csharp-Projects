@@ -2,7 +2,9 @@
  * Author: BalkanBasileus
  * 
  * Program Description:
- *  
+ *  Menu driven program that asks user for input and hashes string into 
+ *  table, or reads file from file. Shows understanding of hash table from
+ *  collections, file read, try-catch,do-while, and enums.
  *
  *
  *****************************************************************************/
@@ -54,7 +56,8 @@ namespace HashTables {
           //Case ONE
           case options.ONE:
 
-          Program.optionONE(ref hashTable, ref proceed);
+          Program.optionONE(ref hashTable);
+          Program.displayHashTable(ref hashTable, ref proceed);
           if (proceed == 'y') {
             hashTable.Clear(); //reset
             continue; //begin again at try statement
@@ -65,7 +68,7 @@ namespace HashTables {
           //Case TWO  
           case options.TWO:
           Program.readFile(ref hashTable);
-          Program.optionTWO(ref hashTable, ref proceed);
+          Program.displayHashTable(ref hashTable, ref proceed);
 
           if (proceed == 'y') {
             hashTable.Clear(); //reset
@@ -86,9 +89,9 @@ namespace HashTables {
 
     //METHODS
     /////////////////////////////////////////////////////////////////////////////////
-    
+
     //Display hash table method
-    public static void optionONE(ref SortedDictionary<string, int> hashTable, ref char proceed) {
+    public static void optionONE(ref SortedDictionary<string, int> hashTable) {
       /*Pre:
        *
        *Post:
@@ -115,51 +118,13 @@ namespace HashTables {
           hashTable.Add(key, 1);
         }
       }
-
-      //Display Table Header 
-      Console.WriteLine();
-      Console.WriteLine($"Sorted HashTable: ");
-      Console.WriteLine();
-
-      //Header
-      Console.WriteLine($" {"Key",-10}{"Value",14}");
-
-      //Display Table
-      foreach (var Key in hashTable.Keys) {
-
-        Console.WriteLine($"{Key,-10}{hashTable[Key],15}");
-
-      }
-      Console.WriteLine();
-      Console.WriteLine("Words: " + hashTable.Count);
-
-      //Proceed?
-      Console.Write("Continue[y/n]: ");
-      proceed = Console.ReadLine()[0];
-
-      //Error check
-      while (Char.ToLower(proceed) != 'y' && Char.ToLower(proceed) != 'n') {
-
-        Console.Write("Continue[y/n]: ");
-        proceed = Console.ReadLine()[0];
-      }
-
-      //Write Header for main. Will reprompt menu w/ this on top.
-      if (Char.ToLower(proceed) == 'y') {
-        Console.WriteLine("///////////////////////////////////////");
-        proceed = 'y';
-      }
-      else {
-        Console.WriteLine("///////////////////////////////////////");
-        Environment.Exit(0);
-      }
     }
 
     //optonTWO Method
-    public static void optionTWO(ref SortedDictionary<string, int> hashTable, ref char proceed) {
+    public static void displayHashTable(ref SortedDictionary<string, int> hashTable, ref char proceed) {
       /*Pre: Takes hash table and menu driven char by ref.
        *
-       *Post: Displays contents of hash table read from file by 'readFile' method.
+       *Post: Displays contents of hash table read from file by 'readFile' method or from optionONE.
        */
 
       //Display Table Header 
@@ -221,7 +186,7 @@ namespace HashTables {
       while( (line = file.ReadLine() ) != null) {
 
         //tokenize using .split()
-        stringArray = System.Text.RegularExpressions.Regex.Split(line, @" ");
+        stringArray = System.Text.RegularExpressions.Regex.Split(line, @"\s");
 
         foreach (var word in stringArray) {
 
@@ -242,3 +207,67 @@ namespace HashTables {
 
   }
 }
+
+/*
+ * SAMPLE OUTPUT
+ 
+////////////////Welcome////////////////
+MENU 
+1) Hash String 
+2) Hash File 
+
+Choose Option: 1
+Enter String to hash: I will enter and I will                 
+
+Sorted HashTable: 
+
+ Key                  Value
+                      1
+and                   1
+enter                 1
+i                     2
+will                  2
+
+Words: 5
+Continue[y/n]: y
+///////////////////////////////////////
+MENU 
+1) Hash String 
+2) Hash File 
+
+Choose Option: 2
+
+Sorted HashTable: 
+
+ Key                  Value
+(class-based),        1
+a                     1
+and                   2
+anders                1
+by                    1
+c#                    1
+component-oriented    1
+declarative,          1
+designed              1
+disciplines.          1
+encompassing          1
+functional,           1
+general-purpose,      1
+generic,              1
+hejlsberg,            1
+imperative,           1
+is                    1
+language              1
+lexically             1
+multi-paradigm        1
+object-oriented       1
+programming           2
+scoped,               1
+strong                1
+typing,               1
+was                   1
+
+Words: 26
+Continue[y/n]: n
+///////////////////////////////////////
+ */
