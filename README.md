@@ -16,3 +16,8 @@ Simple guessing game with random generation.
 
 ![Alt text](https://github.com/BalkanBasileus/Csharp-Projects/blob/master/Screenshots/GuessingGame%20Screenshot.png?raw=true "Optional Title")
 
+**String Hash Table**
+
+Menu driven program with options to enter a string or read a file. Reads in strings,
+tokenizes, and populates a sorted hash table. Practice with data structures from
+Collections library.
