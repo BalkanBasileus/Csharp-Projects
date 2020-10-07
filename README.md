@@ -1,5 +1,5 @@
 # C# - Projects
-C# programs developed while learning and transitioning to the language.
+C# Termnal programs developed while learning and transitioning to the language.
 
 **Terminal ATM simulator**
 
@@ -21,3 +21,6 @@ Simple guessing game with random generation.
 Menu driven program with options to enter a string or read a file. Reads in strings,
 tokenizes, and populates a sorted hash table. Practice with data structures from
 Collections library.
+
+![Alt text](https://github.com/BalkanBasileus/Csharp-Projects/blob/master/Screenshots/Screen%20Shot%202.png?raw=true "Optional Title")
+![Alt text](https://github.com/BalkanBasileus/Csharp-Projects/blob/master/Screenshots/Screen%20Shot%201.png?raw=true "Optional Title")
