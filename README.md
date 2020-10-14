@@ -10,11 +10,6 @@ deposit from account.
 
 ![Alt text](https://github.com/BalkanBasileus/Csharp-Projects/blob/master/Screenshots/ATM%20Screenshot.png?raw=true "Optional Title")
 
-**Guessing Game**
-
-Simple guessing game with random generation.
-
-![Alt text](https://github.com/BalkanBasileus/Csharp-Projects/blob/master/Screenshots/GuessingGame%20Screenshot.png?raw=true "Optional Title")
 
 **String Hash Table**
 
@@ -24,3 +19,15 @@ Collections library.
 
 ![Alt text](https://github.com/BalkanBasileus/Csharp-Projects/blob/master/Screenshots/Screen%20Shot%202.png?raw=true "Optional Title")
 ![Alt text](https://github.com/BalkanBasileus/Csharp-Projects/blob/master/Screenshots/Screen%20Shot%201.png?raw=true "Optional Title")
+
+
+**Guessing Game**
+
+Simple guessing game with random generation.
+
+![Alt text](https://github.com/BalkanBasileus/Csharp-Projects/blob/master/Screenshots/GuessingGame%20Screenshot.png?raw=true "Optional Title")
+
+
+**Complex Numbers**
+
+Performs add,sub, and multiplication of complex numbers using operator overide and structs.
